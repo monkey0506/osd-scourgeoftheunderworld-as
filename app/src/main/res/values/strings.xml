@@ -1,0 +1,34 @@
+<resources>
+    <!--
+        TODO: define string RSA_public_key and int[] ExpansionDownloaderServiceSALT
+
+        SA_public_key is the Base64-encoded RSA public key provided on the
+        Google Play Developer Console (you may need to upload an APK first!).
+
+        ExpansionDownloaderServiceSALT is defined as an int[] rather than
+         a byte[] so that you can use a resource XML file with integer-array.
+         Values are expected to be a valid byte, so should be in the range
+         of -128 to 127.
+
+         These values are implemented in ExpansionDownloaderService.java.
+         You may want to define your values in a separate XML file, such as
+         private.xml, which is already a part of this project's .gitignore.
+    -->
+    <!-- TODO: Update these values for your project -->
+    <string name="package_name">com.monkeymoto.osd.scourge</string>       <!-- package name -->
+    <string name="app_name">Scourge of the Underworld</string>            <!-- app name -->
+    <string name="game_file_name">OSD-ScourgeOfTheUnderworld.ags</string> <!-- game EXE or data file name -->
+    <!-- EXPANSION DOWNLOADER STRINGS -->
+    <string name="text_button_resume">Resume</string>
+    <string name="text_button_pause">Pause</string>
+    <string name="text_wifiOnly">WiFi Only</string>
+    <string name="text_useCellular">Use Cellular</string>
+    <string name="text_wifiSettings">Wifi Settings</string>
+    <!-- Expansion Downloader "Default" Strings -->
+    <!-- Used in the designer, but not shown at runtime -->
+    <string name="text_default_status">Status</string>
+    <string name="text_default_progressAverageSpeed">Progress Average Speed</string>
+    <string name="text_default_progressFraction">Progress Fraction</string>
+    <string name="text_default_progressPercentage">Progress Percentage</string>
+    <string name="text_default_progressTimeRemaining">Progress Time Remaining</string>
+</resources>

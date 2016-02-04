@@ -1,0 +1,29 @@
+apply plugin: 'com.android.model.application'
+
+model {
+    android {
+        compileSdkVersion = 23
+        buildToolsVersion = "23.0.2"
+        defaultConfig {
+            applicationId 'com.monkeymoto.osd.scourge' // TODO: UPDATE ME
+            minSdkVersion.apiLevel = 9
+            targetSdkVersion.apiLevel = 23
+            versionCode 4                              // TODO: UPDATE ME
+            versionName "VERSIEN-0.04GT6-ALPha4"       // TODO: UPDATE ME
+        }
+        buildTypes {
+            release {
+                minifyEnabled = false
+            }
+        }
+        productFlavors {
+        }
+    }
+}
+
+dependencies {
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile project(':agsEngineLibrary')
+    compile project(':downloader_library')
+    compile fileTree(dir: "$rootProject.projectDir/build/native-libs", include: 'native-libs.jar')
+}
