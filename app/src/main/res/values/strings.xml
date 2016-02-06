@@ -15,7 +15,6 @@
          private.xml, which is already a part of this project's .gitignore.
     -->
     <!-- TODO: Update these values for your project -->
-    <string name="package_name">com.monkeymoto.osd.scourge</string>       <!-- package name -->
     <string name="app_name">Scourge of the Underworld</string>            <!-- app name -->
     <string name="game_file_name">OSD-ScourgeOfTheUnderworld.ags</string> <!-- game EXE or data file name -->
     <!-- EXPANSION DOWNLOADER STRINGS -->

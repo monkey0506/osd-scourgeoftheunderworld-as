@@ -26,8 +26,7 @@ public class MainActivity extends Activity {
     static final int OBB_FILE_VERSION = 3; // default to app version, may change as needed
     static final long OBB_FILE_SIZE = 4335674L; // file size in bytes of expansion file
     private static final String OBB_KEY = null; // key used when generating expansion file
-    private static final String PACKAGE_NAME = App.getContext().getResources()
-            .getString(R.string.package_name);
+    private static final String PACKAGE_NAME = App.getContext().getPackageName();
     private static final String GAME_FILE_NAME = App.getContext().getResources()
             .getString(R.string.game_file_name);
     private static final String OBB_FILE_NAME = "main." + OBB_FILE_VERSION + "." + PACKAGE_NAME +
