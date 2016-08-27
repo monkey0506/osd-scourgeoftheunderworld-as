@@ -2,8 +2,6 @@ package com.monkeymoto.osd.scourge;
 
 import com.google.android.vending.expansion.downloader.impl.DownloaderService;
 
-import java.util.Arrays;
-
 public class ExpansionDownloaderService extends DownloaderService {
     @Override
     public String getPublicKey() {

@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ScourgeOfTheUnderworld.iml" filepath="$PROJECT_DIR$/ScourgeOfTheUnderworld.iml" />
       <module fileurl="file://$PROJECT_DIR$/agsEngineLibrary/agsEngineLibrary.iml" filepath="$PROJECT_DIR$/agsEngineLibrary/agsEngineLibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/downloader_library/downloader_library.iml" filepath="$PROJECT_DIR$/downloader_library/downloader_library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/osd-scourgeoftheunderworld-as.iml" filepath="$PROJECT_DIR$/osd-scourgeoftheunderworld-as.iml" />
       <module fileurl="file://$PROJECT_DIR$/play_licensing_library/play_licensing_library.iml" filepath="$PROJECT_DIR$/play_licensing_library/play_licensing_library.iml" />
     </modules>
   </component>

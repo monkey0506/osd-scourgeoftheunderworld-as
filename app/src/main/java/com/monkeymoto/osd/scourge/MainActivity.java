@@ -1,4 +1,4 @@
-package com.monkeymoto.osd.scourge; // TODO: Refactor -> Rename to your package name
+package com.monkeymoto.osd.scourge;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -21,11 +21,11 @@ import android.util.Log;
 
 
 public class MainActivity extends Activity {
-    private static final int VERSION = BuildConfig.VERSION_CODE;
-    // TODO: Update OBB_FILE_VERSION, OBB_FILE_SIZE, and OBB_KEY
-    static final int OBB_FILE_VERSION = 3; // default to app version, may change as needed
-    static final long OBB_FILE_SIZE = 4335674L; // file size in bytes of expansion file
-    private static final String OBB_KEY = null; // key used when generating expansion file
+    static final int OBB_FILE_VERSION = App.getContext().getResources().
+            getInteger(R.integer.obbFileVersion);
+    static final long OBB_FILE_SIZE = Long.parseLong(App.getContext().getResources().
+            getString(R.string.obbFileSize)); // file size in bytes of expansion file
+    private static final String OBB_KEY; // key used when generating expansion file
     private static final String PACKAGE_NAME = App.getContext().getPackageName();
     private static final String GAME_FILE_NAME = App.getContext().getResources()
             .getString(R.string.game_file_name);
@@ -37,6 +37,12 @@ public class MainActivity extends Activity {
                     OBB_FILE_NAME;
     private static final int DOWNLOAD_REQUEST = 1;
     private OnObbStateChangeListener expansionListener;
+
+    static
+    {
+        String obbKey = App.getContext().getResources().getString(R.string.obbKey);
+        OBB_KEY = obbKey.matches("@null") ? null : obbKey;
+    }
 
     private static boolean getObbEmbedded() {
         try {

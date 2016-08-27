@@ -9,8 +9,9 @@ local.properties
 .DS_Store
 build
 captures
-private.xml
 .metadata
 Thumbs.db
 libs
 app/src/main/assets
+private.xml
+local.static.properties
