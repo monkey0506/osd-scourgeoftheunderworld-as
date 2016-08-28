@@ -22,9 +22,10 @@ It is much easier to download the pre-built native libraries than it is to rebui
 unless you have made any changes to the AGS engine or the built-in plugin sources there's no need to
 build them. You can grab the latest libraries from the
 [AGS build server](http://teamcity.bigbluecup.org/viewType.html?buildTypeId=AdventureGameStudio_EngineAndroid)
-(requires login/registration). Select the engine branch you want to use (releases are stable builds,
-master is latest dev build) and click on the *Artifacts* link. This will bring you to a page where
-you can download `engine-android.zip`, which contains the APK of your selected branch of AGS.
+(requires login/registration, but you may login as "guest" with no password). Select the engine
+branch you want to use (releases are stable builds, master is latest dev build) and click on the
+*Artifacts* link. This will bring you to a page where you can download `engine-android.zip`, which
+contains the APK of your selected branch of AGS.
 
 Once you have obtained `engine-android.zip`, you can extract `AGS-debug.apk`. Open the APK file with
 your choice of archive tool (7-Zip, WinRAR, etc.). Extract the contents of the `lib` folder
