@@ -1,13 +1,6 @@
 <resources>
-    <!--
-        TODO: Obtain an RSA public key from Google Play Developer Console
-        You may need to upload an APK without the key first.
-    -->
-    <string name="RSA_public_key">@null</string>
-    <!--
-        TODO: Generate some (secure) random bytes ([-128, 127]) to populate this salt.
-    -->
+    <string name="RSA_public_key">$AGS_GAME_RSA_PUBLIC_KEY$</string>
     <integer-array name="ExpansionDownloaderServiceSALT">
-        <item>0</item>
+        $AGS_GAME_PRIVATE_SALT$
     </integer-array>
 </resources>

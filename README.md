@@ -1,8 +1,45 @@
-# OCEANSPIRIT DENNIS: SCOURGE OF THE UNDERWORLD
+# ADVENTURE GAME STUDIO
 
 This [Android Studio](https://developer.android.com/studio/index.html) project is designed for
 building standalone APKs of [Adventure Game Studio](http://www.adventuregamestudio.co.uk/) games,
 for release on the Google Play Store.
+
+## What is this?
+
+This is a template for an Android Studio project, based on the
+[osd-scourgeoftheunderworld-as](https://github.com/monkey0506/osd-scourgeoftheunderworld-as)
+project. This template is not meant to be built as-is, but for use with AGS. To build this project,
+the Java source files (`app/src/main/java/*.java`) must be copied into a package directory (e.g.,
+`app/src/main/java/com/bigbluecup/game`), and the following text symbols must be replaced:
+
+* `$AGS_GAME_PACKAGE$` must be replaced with the package name (e.g., `com.bigbluecup.game`) in the
+  following files:
+  * Java source files (`app/src/main/java/*.java`)
+  * `app/src/main/AndroidManifest.xml`
+  * `project.properties`
+* `$AGS_GAME_VERSION_CODE$` and `$AGS_GAME_VERSION_NAME$` in `project.properties` must be replaced
+  with the game's version code and version name, respectively.
+* The following symbols are used in `local.static.properties`:
+  * `$AGS_GAME_KEYSTORE_PATH$` must be replaced with the path to the Java keystore
+  * `$AGS_GAME_KEYSTORE_PASSWORD$` must be replaced with the Java keystore password
+  * `$AGS_GAME_KEYSTORE_ALIAS$` must be replaced with the Java keystore alias
+  * `$AGS_GAME_KEYSTORE_ALIAS_PASSWORD$` must be replaced with the Java keystore alias password
+* The following symbols are used in `app/src/main/res/values/project.xml`:
+  * `$AGS_GAME_NAME$` must be replaced with the name of your AGS game (as it will appear on the
+    device)
+  * `$AGS_GAME_DATA_FILENAME$` must be replaced with the filename of your AGS game data file (e.g.,
+    `game.ags` or `game.exe`)
+  * `$AGS_GAME_OBB_VERSION$` must be replaced with the version of your APK expansion file
+  * `$AGS_GAME_OBB_FILE_SIZE$` must be replaced with the file size (in bytes) of your APK expansion
+    file
+  * `$AGS_GAME_OBB_PASSWORD$` must be replaced with the password of your APK expansion file, or
+    `@null` for none.
+* The following symbols are used in `app/src/main/res/values/private.xml`:
+  * `$AGS_GAME_RSA_PUBLIC_KEY$` must be replaced with the RSA public key of your app
+  * `$AGS_GAME_PRIVATE_SALT$` must be replaced with a series of bytes formatted as
+    `<item>VALUE</item>`
+
+Once these items are updated appropriately, the project can then be built normally.
 
 ## Prerequisites
 
