@@ -97,6 +97,14 @@ with the Android SDK has been identified with bugs that prevent using game folde
 prefer the command line, the jobb source included with the jobbifier tool may still be run from the
 command line.
 
+Whether using the jobb tool or jobbifier, the input directory is your AGS game's Compiled folder. If
+using AGS 3.4.0, you will need to copy the data files from "Compiled" into a separate directory
+first (newer versions of AGS will place these files into a separate "Compiled/data" folder, and
+eventually include an Android builder). Specifically you need the ".ags" or ".exe" file and any
+resource and VOX files. Note that (in my tests) not all versions of Android properly support
+mounting embedded OBB files, so it is currently not recommended to add a password when creating the
+OBB file.
+
 Your expansion OBB file *may* be embedded into the APK by placing it in the "app/src/main/assets"
 folder, but it should be understood that this requires *copying* the OBB file onto external storage
 before it can be used (duplicating the size of your game files!). The preferred method therefore is
